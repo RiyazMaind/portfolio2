@@ -1,0 +1,45 @@
+/* Default styles for the footer */
+footer {
+  height: 200px;
+  background-color: var(--secondary-color);
+  padding: 3rem 2rem;
+}
+
+.socials {
+  display: flex;
+  gap: 2rem;
+}
+
+.address {
+  display: flex;
+  margin-top: 2rem;
+  color: var(--pitch-black);
+  align-items: end;
+  justify-content: end;
+  flex-direction: column;
+}
+
+footer h3 {
+  color: var(--pitch-black);
+}
+
+/* Media query for Android devices with a maximum width of 768px */
+@media screen and (max-width: 768px) {
+  footer {
+    height: auto; /* Adjust the height for smaller screens */
+  }
+
+  .socials {
+    flex-direction: column; /* Stack social icons vertically on smaller screens */
+  }
+
+  .address {
+    align-items: center; /* Center align the address content */
+    justify-content: center;
+    text-align: center; /* Center align the text */
+  }
+  
+  footer h3 {
+    font-size: 1.5rem; /* Adjust the font size for smaller screens */
+  }
+}
