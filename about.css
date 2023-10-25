@@ -25,6 +25,7 @@
     @media (max-width: 800px) {
       width: 100%;
     }
+    
 }
  
 div img{
@@ -76,7 +77,5 @@ div img{
   .about-box {
     flex-direction: column;
   }
-  img {
-    width: 100%; /* Adjust image width to fit smaller screens */
-  }
+  
 }
