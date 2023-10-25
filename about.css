@@ -28,10 +28,6 @@
     
 }
  
-div img{
-    border-radius: 10px;
-    size: 20px;
-}
 /* Default styles */
 .about-box {
   display: flex;
@@ -52,5 +48,10 @@ img {
   img {
     width: 100%; /* Adjust image width to fit smaller screens */
   }
+}
+
+div img{
+  border-radius: 10px;
+  size: 20px;
 }
 
