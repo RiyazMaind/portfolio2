@@ -27,7 +27,10 @@
     }
 }
  
-
+div img{
+    border-radius: 10px;
+    size: 20px;
+}
 /* Default styles for desktop screens */
 .about-box {
   display: flex;
