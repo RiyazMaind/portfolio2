@@ -1,30 +1,49 @@
 .project-box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    @media (max-width: 600px) {
-      flex-direction: column;
-    }
-  }
-  
-  .project-card > img {
-    width: 350px;
-    border: red solid 1px;
-  }
-  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-card > img {
+  width: 350px;
+  border: red solid 1px;
+}
+
+.project-card {
+  flex-basis: 350px;
+  background-color: #ca2858;
+  border-radius: 2rem;
+  padding: 1.5rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-card-details > img {
+  margin-right: 1rem;
+}
+
+/* Media Query for Small Android Devices */
+@media screen and (max-width: 600px) and (max-device-width: 600px) {
   .project-card {
-    flex-basis: 350px;
-    background-color: #ca2858;
-    border-radius: 2rem;
-    padding: 1.5rem;
-    margin: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-basis: 100%; /* Full width for smaller screens */
   }
-  
-  .project-card-details > img {
-    margin-right: 1rem;
+
+  .project-card > img {
+    width: 100%; /* Adjust the image width to fit the screen */
   }
+}
+
+/* Media Query for Larger Android Devices */
+@media screen and (min-width: 601px) and (max-device-width: 1024px) {
+  .project-box {
+    justify-content: space-between; /* Adjust as needed */
+  }
+
+  .project-card {
+    flex-basis: calc(33.33% - 2rem); /* Adjust for 3 columns, with margins */
+  }
+}
