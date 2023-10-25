@@ -69,10 +69,7 @@ div img{
   align-items: center;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
+
 
 /* Media Query for Smaller Screens (e.g., Android) */
 @media (max-width: 600px) {
