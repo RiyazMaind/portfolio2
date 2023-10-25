@@ -62,3 +62,24 @@ div img{
     margin-top: 1rem;
   }
 }
+/* Default styles */
+.about-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media Query for Smaller Screens (e.g., Android) */
+@media (max-width: 600px) {
+  .about-box {
+    flex-direction: column;
+  }
+  img {
+    width: 100%; /* Adjust image width to fit smaller screens */
+  }
+}
