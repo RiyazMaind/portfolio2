@@ -30,7 +30,10 @@ div img{
   width: 17%;
 }
 .about-box img{
-  width: 70%;
+  width: 30%;
+  @media (max-width: 800px) {
+    width: 70%;
+  }
   border-radius: 20px;
 }
 

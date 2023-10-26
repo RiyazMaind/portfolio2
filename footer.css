@@ -43,3 +43,10 @@ footer h3 {
     font-size: 1.5rem; /* Adjust the font size for smaller screens */
   }
 }
+footer div img{
+  width: 80%;
+  @media (max-width: 800px) {
+    width: 20%;
+  }
+  
+}
